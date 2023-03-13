@@ -1,0 +1,72 @@
+{
+  "name": "test",
+  "description": "Use TypeScript, TailwindCSS & Sass to quick start your new Next.js app!!",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mike van Peeren",
+    "url": "https://github.com/MikevPeeren"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tailwindcss",
+    "next",
+    "next.js",
+    "starter",
+    "typescript",
+    "prettier",
+    "eslint",
+    "sass",
+    "react",
+    "husky",
+    "postcss",
+    "sass",
+    "nextjs starter",
+    "tailwindcss starter",
+    "nextjs tailwindcss starter",
+    "nextjs-tailwind-starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MikevPeeren/next-typescript-tailwindcss-sass-starter.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ],
+    "*.{html,js,ts}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@next/font": "^13.2.4",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "@types/react": "^18.0.28",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-config-prettier": "^8.7.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.4",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.5"
+  }
+}
